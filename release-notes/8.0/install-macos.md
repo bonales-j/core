@@ -1,12 +1,12 @@
 # .NET 8 installation instructions for macOS
 
-The following instructions demonstrate installing .NET 8 on macOS. These instructions augment the more general [.NET install instructions](install.md), including installing with `.tar.gz` files, that work on multiple operating systems.
+The following instructions demonstrate installing .NET 8 on macOS. These instructions augment the more general [.NET install instructions][def], including installing with `.tar.gz` files, that work on multiple operating systems.
 
 ## Distributions
 
 The following distributions are available for Linux:
 
-- .NET SDK: includes tools for building and testing applications, and includes the runtime distributions that follow.
+- .NET SDK: includes tools for building and testing applications, and includes the runtime distribut ions that follow.
 - .NET Runtime: includes the .NET runtime and libraries, enabling running console applications.
 - ASP.NET Core Runtime: includes the .NET and ASP.NET Core runtimes, enabling running console, and web applications.
 
@@ -47,3 +47,6 @@ The following workflow demonstrates downloading, unpacking, configuring, and run
 The `DOTNET_ROOT` environment variable is required to launch an application with their executables (like `myapp.exe`). The executables look for this environment variable to find the runtime if it isn't installed in its regular location. The `PATH` environment variable must be updated if you want to use `dotnet` without absolute paths to its location. Setting both of these environment variables is optional.
 
 You can add your .NET install location permanently to your path if you'd like.
+
+
+[def]: install.md
